@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    /*reseteo de los márgenes*/
+    /*selector universal*/
+    padding: 0;
+
+    box-sizing: border-box;
+    /*toma el padding como parte del height o del width del elemento,
+    width 100px +10px = 120px
+    si yo utilizo este valor
+    width va a seguir siendo 100px
+    se va a tomar del width el 10px de cada lado*/
+
+
+}
+
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    font-size: 80%;
+    border-top: 8px solid #FCEE21;
+
+}
+
+p {
+    font-size: 1.75em;
+}
+
+header p,
+a {
+    font-size: 2em;
+}
+
+a {
+    color: #333333;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-left: 90px;
+
+
+
+
+}
+
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+h1 {
+
+    text-transform: uppercase;
+    font-size: 7.33em;
+    /*transforma el texto en mayúscula*/
+}
+
+
+h2 {
+
+    background-color: #FCEE21;
+    font-size: 1.66em;
+    text-transform: lowercase;
+    /*transforma el texto en minúscula*/
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 2.16em;
+    background-color: #FCEE21;
+
+
+}
+
+
+#servicios h4 {
+
+    font-size: 2.55em;
+    text-transform: uppercase;
+    margin-bottom: 72px;
+    color: black;
+    margin: 0;
+
+
+
+
+}
+
+
+h4 {
+
+    font-size: 3.16em;
+    color: white;
+    line-height: 80px;
+    margin-bottom: 44.45px;
+
+
+
+}
+
+h4 span {
+    background-color: black;
+}
+
+
+ol {
+
+    list-style-position: inside;
+
+
+}
+
+
+li {
+    margin-bottom: 22px;
+    font-size: 1.5em;
+
+
+
+}
+
+
+.fondo {
+
+    font-size: 1.87em;
+    background-color: #FCEE21;
+    font-weight: 700;
+
+
+
+}
+
+header span {
+
+    font-family: 'Coiny', cursive;
+    font-weight: 400;
+
+}
+
+
+
+
+header,
+section {
+    justify-content: space-between;
+}
+
+section {
+    margin-top: 65px;
+    width: 100%;
+    border-bottom: 3px inset #333;
+    padding-bottom: 87px;
+
+
+}
+
+nav,
+header,
+main,
+footer div {
+
+    width: 83.33%;
+    margin: auto;
+
+
+
+
+
+
+}
+
+
+#imagenes,
+#sinBorde {
+    border: none;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /*alinear el elemento en su eje x*/
+    align-items: flex-end;
+    /*controlar la alineación vertical, y*/
+
+    height: 140px;
+    margin-bottom: 110px;
+
+
+
+
+
+
+
+
+}
+
+form span {
+    color: #C1272D;
+}
+
+
+
+
+header,
+section {
+
+    display: flex;
+
+}
+
+nav div {
+    width: auto;
+}
+
+div {
+
+    width: 33.33%;
+
+}
+
+/*div en general*/
+
+header #caja,
+#servicios div+div,
+#cajaContacto {
+
+    width: 41.66%;
+
+
+
+}
+
+/*afecto tanto al elemento que se llama
+caja y está adentro del header, 
+como al div que viene inmediatamente después
+de un div que está adentro de un id servicios*/
+
+
+label,
+button,
+input[type="reset"] {
+    font-weight: 700;
+    font-size: 1.25em;
+    display: block;
+}
+
+button,
+input[type="reset"] {
+    color: white;
+    background-color: black;
+    font-size: 1.55em;
+    padding: 4px;
+    width: auto;
+
+
+
+}
+
+
+form div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 21px 15px;
+
+}
+
+#imagenes div {
+    width: 8.33%;
+}
+
+textarea {
+    height: 173px;
+    resize: none;
+}
+
+
+
+img {
+    width: 100%;
+
+}
+
+
+
+
+footer {
+
+
+    width: 100%;
+    height: 140px;
+    background-color: #FCEE21;
+
+
+}
+
+footer div {
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logoNav {
+
+    width: 16%;
+
+}
+
+
+
+
+#correo {
+
+    text-transform: lowercase;
+
+}
+
+#correo:hover {
+
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+@media (max-width:768px) {
+
+    body {
+
+        font-size: 60%;
+    }
+
+
+    .logoNav {
+
+        width: 30%;
+
+
+    }
+
+
+
+}
