@@ -39,12 +39,14 @@ a {
     color: #333333;
     text-transform: capitalize;
     text-decoration: none;
-    margin-left: 90px;
-
 
 
 
 }
+
+nav a { margin-left: 90px;}
+
+
 
 
 a:hover {
@@ -227,7 +229,7 @@ div {
 
 header #caja,
 #servicios div+div,
-#cajaContacto {
+#contacto {
 
     width: 41.66%;
 
@@ -262,12 +264,23 @@ input[type="reset"] {
 }
 
 
+button:hover,
+input[type="reset"]:hover {
+
+background-color: white;
+color:black;
+
+} 
+
+
 form div {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
 }
+
+
 
 input,
 textarea {
@@ -305,6 +318,8 @@ footer {
 
 }
 
+footer a { margin-left: 100px;}
+
 footer div {
 
     display: flex;
@@ -336,9 +351,12 @@ footer div {
 
 @media (max-width:768px) {
 
+    h1 { font-size:2em;}
+    
     body {
 
-        font-size: 60%;
+        font-size: 80%;
+        padding: 1em;
     }
 
 
@@ -348,7 +366,20 @@ footer div {
 
 
     }
+  
+h2 { text-align:center;}
 
+* { flex-direction: column !important;  }
+
+form div, main, section,  nav, header, div, header div, #servicios div, #imagenes div { width: 100% !important;}   
+
+     nav a { margin-left: 0; display: block;}
+
+
+button, input[type="reset"]{ width: 80%; margin: auto;}    
+
+#imagenes  img { width:20% !important; margin: auto; display:block;
+margin-bottom: 15px;}
 
 
 }
